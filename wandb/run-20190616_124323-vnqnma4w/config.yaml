@@ -1,0 +1,14 @@
+wandb_version: 1
+
+batch_size:
+  desc: null
+  value: 32
+epochs:
+  desc: null
+  value: 50
+img_height:
+  desc: null
+  value: 150
+img_width:
+  desc: null
+  value: 150

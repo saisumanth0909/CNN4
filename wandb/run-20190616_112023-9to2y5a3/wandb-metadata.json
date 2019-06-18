@@ -1,0 +1,24 @@
+{
+    "root": "/home/jovyan/CNN4",
+    "git": {
+        "remote": "https://github.com/saisumanth0909/CNN4.git",
+        "commit": "3c4c2905306c853f2ac676fadd3eb22086f7f8ca"
+    },
+    "email": null,
+    "startedAt": "2019-06-16T11:20:23.392433",
+    "host": "jupyter-saisumanth0909",
+    "username": "jovyan",
+    "os": "Linux-4.14.119+-x86_64-with-debian-buster-sid",
+    "python": "3.7.3",
+    "gpu": "Tesla K80",
+    "gpu_count": 1,
+    "cpu_count": 2,
+    "program": "bottleneck.py",
+    "cuda": "10.1.168",
+    "args": [],
+    "state": "finished",
+    "heartbeatAt": "2019-06-16T11:23:08.559247",
+    "jobType": null,
+    "mode": "run",
+    "exitcode": 0
+}

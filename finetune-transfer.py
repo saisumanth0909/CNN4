@@ -59,7 +59,7 @@ for layer in conv_base.layers:
         layer.trainable = True
     else:
         layer.trainable = False
-        
+    print(layer.name,layer.trainable)
 print('This is the number of trainable weights '
       'after freezing the conv base:', len(model.trainable_weights))
 

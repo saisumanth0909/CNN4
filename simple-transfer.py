@@ -56,7 +56,7 @@ print('This is the number of trainable weights '
 
 # transfer learning
 model.compile(loss='binary_crossentropy',
-              optimizer=RMSprop(lr=2e-5),
+              optimizer=RMSprop(lr=2e-5),    #Learning Rate is low as we want the process to be safer here.
               metrics=['acc'])
 
 train_generator, validation_generator = generators(

@@ -1,0 +1,130 @@
+{
+    "graph": {
+        "_type": "graph",
+        "format": "keras",
+        "nodes": [
+            {
+                "name": "flatten_1_input",
+                "id": "flatten_1_input",
+                "class_name": "InputLayer",
+                "output_shape": [
+                    null,
+                    7,
+                    7,
+                    512
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "flatten_1",
+                "id": "flatten_1",
+                "class_name": "Flatten",
+                "output_shape": [
+                    null,
+                    25088
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dense_1",
+                "id": "dense_1",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    256
+                ],
+                "num_parameters": 6422784
+            },
+            {
+                "name": "dropout_1",
+                "id": "dropout_1",
+                "class_name": "Dropout",
+                "output_shape": [
+                    null,
+                    256
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dense_2",
+                "id": "dense_2",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    1
+                ],
+                "num_parameters": 257
+            }
+        ],
+        "edges": [
+            [
+                "flatten_1_input",
+                "flatten_1"
+            ],
+            [
+                "flatten_1",
+                "dense_1"
+            ],
+            [
+                "dense_1",
+                "dropout_1"
+            ],
+            [
+                "dropout_1",
+                "dense_2"
+            ]
+        ]
+    },
+    "_timestamp": 1560684186.7619586,
+    "_step": 49,
+    "val_loss": 0.6159093230979542,
+    "val_acc": 0.9610000014305115,
+    "epoch": 49,
+    "loss": 1.0893234332343127e-07,
+    "examples": {
+        "width": 224,
+        "height": 224,
+        "count": 36,
+        "_type": "images",
+        "captions": [
+            "cat",
+            "cat",
+            "cat",
+            "cat",
+            "cat",
+            "cat",
+            "dog",
+            "cat",
+            "cat",
+            "dog",
+            "dog",
+            "cat",
+            "dog",
+            "cat",
+            "cat",
+            "dog",
+            "dog",
+            "cat",
+            "dog",
+            "cat",
+            "cat",
+            "dog",
+            "dog",
+            "dog",
+            "cat",
+            "cat",
+            "dog",
+            "cat",
+            "cat",
+            "dog",
+            "cat",
+            "dog",
+            "cat",
+            "dog",
+            "cat",
+            "cat"
+        ]
+    },
+    "acc": 1.0,
+    "_runtime": 163.7269959449768
+}
